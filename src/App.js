@@ -1,6 +1,7 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap-grid.min.css";
 
 function App() {
   return (
@@ -19,6 +20,13 @@ function App() {
           Learn React
         </a>
       </header>
+      <div className="container">
+        <div className="row">
+          <div className="col-4">aaa</div>
+          <div className="col-4">bbb</div>
+          <div className="col-4">ccc</div>
+        </div>
+      </div>
     </div>
   );
 }
