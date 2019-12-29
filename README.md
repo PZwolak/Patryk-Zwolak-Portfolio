@@ -1,2 +1,2 @@
 # Patryk-Zwolak-Portfolio
-New portfolio in React Framework
+New portfolio in React
