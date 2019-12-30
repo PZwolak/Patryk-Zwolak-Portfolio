@@ -1,24 +1,30 @@
 import React from "react";
 import "../../styles/Header.scss";
-import Hamburger from "./Hamburger";
-// import "../../styles/Header.scss";
+import HeaderHamburger from "./HeaderHamburger";
+import HeaderInfo from "./HeaderInfo";
+import HeaderEmpty from "./HeaderEmpty";
 
 class Header extends React.Component {
-  state = {};
+  state = {
+    hamburgerActive: false
+  };
 
-  handleHamburger = event => {
-    console.log("elio");
-    event.preventDefault();
-    // document.querySelector(".menu-icon-wrapper").classList.toggle("open");
-    // document.querySelector(".sidebar").classList.toggle("is-active");
+  handleHamburger = e => {
+    e.preventDefault();
+    this.setState({
+      hamburgerActive: !this.state.hamburgerActive
+    });
   };
 
   render() {
     return (
       <header className="header">
-        <div className="header__inner">
-          <Hamburger hhh={this.handleHamburger} />
-        </div>
+        <HeaderHamburger
+          handleHamburger={this.handleHamburger}
+          hamburgerActive={this.state.hamburgerActive}
+        />
+        <HeaderInfo hamburgerActive={this.state.hamburgerActive} />
+        <HeaderEmpty hamburgerActive={this.state.hamburgerActive} />
       </header>
     );
   }
