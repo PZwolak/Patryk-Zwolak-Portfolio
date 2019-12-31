@@ -1,3 +1,8 @@
-.App {
-  //   height: 100%;
+#fullpage {
+  position: relative;
+  z-index: 2;
+  margin-left: 100px;
+  .section {
+    opacity: 0.3;
+  }
 }
