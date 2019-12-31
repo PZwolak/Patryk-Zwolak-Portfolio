@@ -1,0 +1,55 @@
+@import "../styles/__variables.scss";
+
+.parallax-background {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to top, $color-5, $color-4);
+  &__elements {
+    position: absolute !important;
+    left: auto !important;
+    right: 0;
+  }
+  &__element {
+    position: relative;
+    right: -50%;
+    background-color: $color-2;
+    opacity: 0.05;
+    transform: rotate(45deg);
+    --distanceBetweenCircle: 100px;
+    &--first {
+      top: calc(var(--distanceBetweenCircle) * 6 / -2);
+      width: calc(100vh + var(--distanceBetweenCircle) * 6);
+      height: calc(100vh + var(--distanceBetweenCircle) * 6);
+    }
+    &--second {
+      top: calc(var(--distanceBetweenCircle) * 5 / -2);
+      width: calc(100vh + var(--distanceBetweenCircle) * 5);
+      height: calc(100vh + var(--distanceBetweenCircle) * 5);
+    }
+    &--third {
+      top: calc(var(--distanceBetweenCircle) * 4 / -2);
+      width: calc(100vh + var(--distanceBetweenCircle) * 4);
+      height: calc(100vh + var(--distanceBetweenCircle) * 4);
+    }
+    &--fourth {
+      top: calc(var(--distanceBetweenCircle) * 3 / -2);
+      width: calc(100vh + var(--distanceBetweenCircle) * 3);
+      height: calc(100vh + var(--distanceBetweenCircle) * 3);
+    }
+    &--fifth {
+      top: calc(var(--distanceBetweenCircle) * 2 / -2);
+      width: calc(100vh + var(--distanceBetweenCircle) * 2);
+      height: calc(100vh + var(--distanceBetweenCircle) * 2);
+    }
+    &--sixth {
+      top: calc(var(--distanceBetweenCircle) / -2);
+      width: calc(100vh + var(--distanceBetweenCircle));
+      height: calc(100vh + var(--distanceBetweenCircle));
+    }
+  }
+}

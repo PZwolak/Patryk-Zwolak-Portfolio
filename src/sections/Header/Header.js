@@ -19,6 +19,10 @@ class Header extends React.Component {
   render() {
     return (
       <header className="header">
+        <HeaderEmpty
+          hamburgerActive={this.state.hamburgerActive}
+          firstElement={true}
+        />
         <HeaderHamburger
           handleHamburger={this.handleHamburger}
           hamburgerActive={this.state.hamburgerActive}
