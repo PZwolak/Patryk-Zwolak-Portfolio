@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 import "../../styles/Header.scss";
 import HeaderHamburger from "./HeaderHamburger";
 import HeaderInfo from "./HeaderInfo";
 import HeaderEmpty from "./HeaderEmpty";
 
-class Header extends React.Component {
+class Header extends Component {
   state = {
     hamburgerActive: false
   };
@@ -17,8 +17,19 @@ class Header extends React.Component {
   };
 
   render() {
+    const headerClass = ["header"];
+    if (this.state.hamburgerActive) {
+      headerClass.push("header--active");
+    } else {
+      headerClass.push("header--deactive");
+      setTimeout(() => {
+        document
+          .querySelector("header.header")
+          .classList.remove("header--deactive");
+      }, 700);
+    }
     return (
-      <header className="header">
+      <header className={headerClass.join(" ")}>
         <HeaderEmpty
           hamburgerActive={this.state.hamburgerActive}
           firstElement={true}

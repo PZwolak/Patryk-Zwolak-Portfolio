@@ -1,0 +1,48 @@
+@import "../styles/__variables.scss";
+
+.main-section {
+  position: relative;
+  z-index: 1;
+  margin-left: 100px;
+  &__element {
+  }
+}
+
+#fp-nav {
+  position: absolute;
+  z-index: 1;
+  left: 37px;
+  bottom: 0;
+  > ul {
+    list-style: none;
+    > li {
+      line-height: 3px;
+      > a {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 15px 0;
+        &.active {
+          > span {
+            &:nth-child(2) {
+              width: 50px;
+              transition: $cubic-1 0.3s;
+            }
+          }
+        }
+        > span {
+          &:nth-child(1) {
+            display: none;
+          }
+          &:nth-child(2) {
+            display: block;
+            width: 25px;
+            height: 4px;
+            border-radius: 10px;
+            transition: $cubic-1 0.3s;
+            background-color: $color-1;
+          }
+        }
+      }
+    }
+  }
+}

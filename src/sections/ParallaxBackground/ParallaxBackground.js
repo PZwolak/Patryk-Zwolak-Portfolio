@@ -1,8 +1,8 @@
-import React from "react";
+import React, { Component } from "react";
 import Parallax from "parallax-js";
 import "../../styles/ParallaxBackground.scss";
 
-class ParallaxBackground extends React.Component {
+class ParallaxBackground extends Component {
   state = {};
 
   componentDidMount() {
