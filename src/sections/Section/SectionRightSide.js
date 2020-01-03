@@ -1,7 +1,7 @@
 import React from "react";
 
 const SectionRightSide = () => {
-  return <div>bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</div>;
+  return <div></div>;
 };
 
 export default SectionRightSide;

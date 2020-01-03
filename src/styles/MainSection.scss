@@ -5,6 +5,15 @@
   z-index: 1;
   margin-left: 100px;
   &__element {
+    > div {
+      display: flex;
+      align-items: center;
+    }
+    padding-left: 50px;
+  }
+  &__left-side {
+  }
+  &__title {
   }
 }
 

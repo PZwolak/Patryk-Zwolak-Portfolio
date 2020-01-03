@@ -2,11 +2,13 @@ import React from "react";
 import SectionLeftSide from "./SectionLeftSide";
 import SectionRightSide from "./SectionRightSide";
 
-const Section = () => {
+const Section = ({ sectionData }) => {
+  console.log(sectionData);
+  const sectionClass = `section main-section__element main-section__${sectionData.sectionClass}`;
   return (
-    <div className="section main-section__element">
-      <SectionLeftSide />
-      <SectionRightSide />
+    <div className={sectionClass}>
+      <SectionLeftSide sideData={sectionData.sectionLeftData} />
+      <SectionRightSide sideData={sectionData.sectionRightData} />
     </div>
   );
 };

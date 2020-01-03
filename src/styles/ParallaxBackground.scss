@@ -20,6 +20,7 @@
     background-color: $color-2;
     opacity: 0.05;
     transform: rotate(45deg);
+    border-radius: 10px;
     --distanceBetweenCircle: 100px;
     &--first {
       top: calc(var(--distanceBetweenCircle) * 6 / -2);
