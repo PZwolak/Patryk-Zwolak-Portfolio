@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/patryk-zwolak-portfolio/static/css/main.c52b1071.chunk.css",
+    "main.js": "/patryk-zwolak-portfolio/static/js/main.8ca2d564.chunk.js",
+    "main.js.map": "/patryk-zwolak-portfolio/static/js/main.8ca2d564.chunk.js.map",
+    "runtime-main.js": "/patryk-zwolak-portfolio/static/js/runtime-main.fef8abca.js",
+    "runtime-main.js.map": "/patryk-zwolak-portfolio/static/js/runtime-main.fef8abca.js.map",
+    "static/css/2.2831ab12.chunk.css": "/patryk-zwolak-portfolio/static/css/2.2831ab12.chunk.css",
+    "static/js/2.50a93613.chunk.js": "/patryk-zwolak-portfolio/static/js/2.50a93613.chunk.js",
+    "static/js/2.50a93613.chunk.js.map": "/patryk-zwolak-portfolio/static/js/2.50a93613.chunk.js.map",
+    "index.html": "/patryk-zwolak-portfolio/index.html",
+    "precache-manifest.6d6e6717b778b6fa79171fa5a3b7d6b8.js": "/patryk-zwolak-portfolio/precache-manifest.6d6e6717b778b6fa79171fa5a3b7d6b8.js",
+    "service-worker.js": "/patryk-zwolak-portfolio/service-worker.js",
+    "static/css/2.2831ab12.chunk.css.map": "/patryk-zwolak-portfolio/static/css/2.2831ab12.chunk.css.map",
+    "static/css/main.c52b1071.chunk.css.map": "/patryk-zwolak-portfolio/static/css/main.c52b1071.chunk.css.map",
+    "static/js/2.50a93613.chunk.js.LICENSE": "/patryk-zwolak-portfolio/static/js/2.50a93613.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fef8abca.js",
+    "static/css/2.2831ab12.chunk.css",
+    "static/js/2.50a93613.chunk.js",
+    "static/css/main.c52b1071.chunk.css",
+    "static/js/main.8ca2d564.chunk.js"
+  ]
+}
