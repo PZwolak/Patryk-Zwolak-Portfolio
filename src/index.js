@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./styles/__globals.scss";
+import "./styles/__typography.scss";
+import "./styles/__buttons.scss";
 import App from "./App";
+import "./scripts/gsapAnimation";
 // import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(<App />, document.getElementById("root"));

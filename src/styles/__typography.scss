@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500,600,700,800,900&display=swap&subset=latin-ext");
+html,
+body {
+  font-family: "Advent Pro", "Kanit", "Barlow Condensed", sans-serif;
+
+  h1,
+  h2 {
+    text-transform: uppercase;
+
+    transform: scaleY(1.3);
+    &.fs-45 {
+      font-size: 4.5rem;
+    }
+    &.fw-600 {
+      font-weight: 600;
+    }
+    &.ls-05 {
+      letter-spacing: 0.5rem;
+    }
+  }
+  span {
+    &.numbers {
+      font-size: 10rem;
+    }
+  }
+  p {
+    &.subheader {
+      font-size: 2rem;
+    }
+  }
+}
