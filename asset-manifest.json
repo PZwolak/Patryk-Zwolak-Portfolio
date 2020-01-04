@@ -1,25 +1,26 @@
 {
   "files": {
-    "main.css": "/patryk-zwolak-portfolio/static/css/main.2092809e.chunk.css",
-    "main.js": "/patryk-zwolak-portfolio/static/js/main.c0c66c19.chunk.js",
-    "main.js.map": "/patryk-zwolak-portfolio/static/js/main.c0c66c19.chunk.js.map",
+    "main.css": "/patryk-zwolak-portfolio/static/css/main.a5f814ca.chunk.css",
+    "main.js": "/patryk-zwolak-portfolio/static/js/main.1e97ec1a.chunk.js",
+    "main.js.map": "/patryk-zwolak-portfolio/static/js/main.1e97ec1a.chunk.js.map",
     "runtime-main.js": "/patryk-zwolak-portfolio/static/js/runtime-main.fef8abca.js",
     "runtime-main.js.map": "/patryk-zwolak-portfolio/static/js/runtime-main.fef8abca.js.map",
     "static/css/2.2831ab12.chunk.css": "/patryk-zwolak-portfolio/static/css/2.2831ab12.chunk.css",
-    "static/js/2.50a93613.chunk.js": "/patryk-zwolak-portfolio/static/js/2.50a93613.chunk.js",
-    "static/js/2.50a93613.chunk.js.map": "/patryk-zwolak-portfolio/static/js/2.50a93613.chunk.js.map",
+    "static/js/2.5c04d386.chunk.js": "/patryk-zwolak-portfolio/static/js/2.5c04d386.chunk.js",
+    "static/js/2.5c04d386.chunk.js.map": "/patryk-zwolak-portfolio/static/js/2.5c04d386.chunk.js.map",
     "index.html": "/patryk-zwolak-portfolio/index.html",
-    "precache-manifest.5c5e69c5703a7470d11352d71014911f.js": "/patryk-zwolak-portfolio/precache-manifest.5c5e69c5703a7470d11352d71014911f.js",
+    "precache-manifest.59cff4e593ea96bb585b1d16d72b6484.js": "/patryk-zwolak-portfolio/precache-manifest.59cff4e593ea96bb585b1d16d72b6484.js",
     "service-worker.js": "/patryk-zwolak-portfolio/service-worker.js",
     "static/css/2.2831ab12.chunk.css.map": "/patryk-zwolak-portfolio/static/css/2.2831ab12.chunk.css.map",
-    "static/css/main.2092809e.chunk.css.map": "/patryk-zwolak-portfolio/static/css/main.2092809e.chunk.css.map",
-    "static/js/2.50a93613.chunk.js.LICENSE": "/patryk-zwolak-portfolio/static/js/2.50a93613.chunk.js.LICENSE"
+    "static/css/main.a5f814ca.chunk.css.map": "/patryk-zwolak-portfolio/static/css/main.a5f814ca.chunk.css.map",
+    "static/js/2.5c04d386.chunk.js.LICENSE": "/patryk-zwolak-portfolio/static/js/2.5c04d386.chunk.js.LICENSE",
+    "static/media/MainSection.scss": "/patryk-zwolak-portfolio/static/media/sesja-9.5ccb2634.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.fef8abca.js",
     "static/css/2.2831ab12.chunk.css",
-    "static/js/2.50a93613.chunk.js",
-    "static/css/main.2092809e.chunk.css",
-    "static/js/main.c0c66c19.chunk.js"
+    "static/js/2.5c04d386.chunk.js",
+    "static/css/main.a5f814ca.chunk.css",
+    "static/js/main.1e97ec1a.chunk.js"
   ]
 }
