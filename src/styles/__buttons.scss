@@ -9,6 +9,7 @@
   height: var(--primary-button-size);
   border-radius: var(--primary-button-size);
   border: solid 3px $color-11;
+  z-index: 5;
   //   background: white;
   cursor: pointer;
   span {

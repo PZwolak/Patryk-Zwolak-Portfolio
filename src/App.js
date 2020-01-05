@@ -19,7 +19,16 @@ class App extends Component {
           header: "Patryk Zwolak",
           subheader: "Front-end Developer"
         },
-        sectionRightData: { id: 0, image: "PatrykZwolak" }
+        sectionRightData: {
+          id: 0,
+          image: "PatrykZwolak",
+          textOnBanner: [
+            { line: "I am person who:" },
+            { line: "1. Belive that everything is possible" },
+            { line: "2. Learns and develops constantly" },
+            { line: "3. Never give up because... (read point no 1)" }
+          ]
+        }
       },
       {
         sectionClass: "about-me",
