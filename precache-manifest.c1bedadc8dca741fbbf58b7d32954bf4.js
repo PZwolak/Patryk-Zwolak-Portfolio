@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1b60c8839f176c2d877a5d0aab05e413",
+    "revision": "f861a6884bf1b1cc64efd3561542f697",
     "url": "/patryk-zwolak-portfolio/index.html"
   },
   {
-    "revision": "03f992ed35f3cba10655",
+    "revision": "e3fef7d296a18cfa11b7",
     "url": "/patryk-zwolak-portfolio/static/css/2.2831ab12.chunk.css"
   },
   {
-    "revision": "2ed1835c67b2405379b5",
-    "url": "/patryk-zwolak-portfolio/static/css/main.a5f814ca.chunk.css"
+    "revision": "fb8b46743cd550deef7f",
+    "url": "/patryk-zwolak-portfolio/static/css/main.f92c9d5c.chunk.css"
   },
   {
-    "revision": "03f992ed35f3cba10655",
-    "url": "/patryk-zwolak-portfolio/static/js/2.5c04d386.chunk.js"
+    "revision": "e3fef7d296a18cfa11b7",
+    "url": "/patryk-zwolak-portfolio/static/js/2.f4654719.chunk.js"
   },
   {
     "revision": "ac65961722e18b0dc9cf6a8a43d5e41c",
-    "url": "/patryk-zwolak-portfolio/static/js/2.5c04d386.chunk.js.LICENSE"
+    "url": "/patryk-zwolak-portfolio/static/js/2.f4654719.chunk.js.LICENSE"
   },
   {
-    "revision": "2ed1835c67b2405379b5",
-    "url": "/patryk-zwolak-portfolio/static/js/main.1e97ec1a.chunk.js"
+    "revision": "fb8b46743cd550deef7f",
+    "url": "/patryk-zwolak-portfolio/static/js/main.9db68abf.chunk.js"
   },
   {
     "revision": "9129f05d18b574ff6623",

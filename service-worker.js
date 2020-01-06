@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/patryk-zwolak-portfolio/precache-manifest.59cff4e593ea96bb585b1d16d72b6484.js"
+  "/patryk-zwolak-portfolio/precache-manifest.c1bedadc8dca741fbbf58b7d32954bf4.js"
 );
 
 self.addEventListener('message', (event) => {
