@@ -4,7 +4,7 @@ import ParallaxBackground from "./components/ParallaxBackground/ParallaxBackgrou
 import Header from "./components/Header/Header";
 import Section from "./components/Section/Section";
 import "./styles/App.scss";
-import "./styles/MainSection.scss";
+import "./styles/Section.scss";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 
 class App extends Component {
@@ -21,7 +21,6 @@ class App extends Component {
         },
         sectionRightData: {
           id: 0,
-          image: "PatrykZwolak",
           textOnBanner: [
             { line: "I am person who:" },
             { line: "1. Belive that everything is possible" },
@@ -34,10 +33,19 @@ class App extends Component {
         sectionClass: "about-me",
         sectionLeftData: {
           id: 1,
-          header: "Ariette Zwolakk",
-          subheader: "Graphic Designer"
+          header: "About me",
+          subheader: "Some words about me"
         },
-        sectionRightData: { id: 1, image: "ArietteZwolak", pageNumber: "01" }
+        sectionRightData: { id: 1 }
+      },
+      {
+        sectionClass: "resume",
+        sectionLeftData: {
+          id: 2,
+          header: "Curiculum vitae",
+          subheader: "Check my CV and e-CV in 2 language version"
+        },
+        sectionRightData: { id: 2 }
       }
     ]
   };

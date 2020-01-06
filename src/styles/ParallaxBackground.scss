@@ -11,16 +11,16 @@
   background-image: linear-gradient(to top, $color-5, $color-4);
   &__elements {
     position: absolute !important;
-    left: auto !important;
     right: 0;
+    left: auto !important;
   }
   &__element {
     position: relative;
     right: -50%;
-    background-color: $color-2;
     opacity: 0.05;
-    transform: rotate(45deg);
     border-radius: 10px;
+    background-color: $color-2;
+    transform: rotate(45deg);
     --distanceBetweenCircle: 100px;
     &--first {
       top: calc(var(--distanceBetweenCircle) * 6 / -2);

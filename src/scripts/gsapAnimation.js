@@ -1,9 +1,54 @@
+import SplitTextJS from "split-text-js";
 import { TweenLite, TimelineMax, Linear, Back, Sine } from "gsap";
 
 document.onreadystatechange = () => {
   if (document.readyState === "complete") {
-    // gsap.fromTo(".active .main-section__header", {xPercent: -100,}, {duration: 1, xPercent: 100});
     let flag = true;
+
+    const textAnimationFunction = () => {
+      let tl = new TimelineMax({ repeat: -1 });
+
+      const firstText = new SplitTextJS(
+        document.querySelector(
+          ".main-section__right-side-inner-description-element--number-1"
+        )
+      ).chars;
+      const secondText = new SplitTextJS(
+        document.querySelector(
+          ".main-section__right-side-inner-description-element--number-2"
+        )
+      ).chars;
+      const thirdText = new SplitTextJS(
+        document.querySelector(
+          ".main-section__right-side-inner-description-element--number-3"
+        )
+      ).chars;
+      tl.staggerFrom(
+        firstText,
+        0.03,
+        { opacity: 0, ease: "expo.out" },
+        0.05,
+        "+=0.1"
+      );
+
+      tl.to(firstText, { duration: 0, delay: 5, opacity: 0 });
+      tl.staggerFrom(
+        secondText,
+        0.03,
+        { opacity: 0, ease: "expo.out" },
+        0.05,
+        "+=0.1"
+      );
+      tl.to(secondText, { duration: 0, delay: 5, opacity: 0 });
+      tl.staggerFrom(
+        thirdText,
+        0.03,
+        { opacity: 0, ease: "expo.out" },
+        0.05,
+        "+=0.1"
+      );
+      tl.to(thirdText, { duration: 0, delay: 5, opacity: 0 });
+    };
 
     TweenLite.fromTo(
       `.active .main-section__header`,
@@ -45,6 +90,11 @@ document.onreadystatechange = () => {
       { y: -2000 },
       { y: 0, duration: 0.5, delay: 0.4, ease: "expo.out" }
     );
+    TweenLite.fromTo(
+      `.active .main-section__right-side-inner-description`,
+      { opacity: 0 },
+      { duration: 0.5, delay: 1.5, opacity: 1 }
+    );
 
     TweenLite.fromTo(
       `.active .main-section__right-side-inner-background-mask--color-5`,
@@ -56,65 +106,6 @@ document.onreadystatechange = () => {
       { x: 0 },
       { x: 1000, duration: 1.2, delay: 1.2, ease: "expo.out" }
     );
-
-    // const animateOutFunction = () => {
-    //   if (
-    //     document.querySelector(
-    //       `.main-section__element.fp-completely:not(.active)`
-    //     )
-    //   ) {
-    //     TweenLite.fromTo(
-    //       `.main-section__element.fp-completely:not(.active) .main-section__header`,
-    //       { x: 0 },
-    //       { x: -1000, duration: 1.5, ease: "expo.out" }
-    //     );
-    //     TweenLite.fromTo(
-    //       `.main-section__element.fp-completely:not(.active) .main-section__geometry-element--first`,
-    //       { x: 0 },
-    //       { x: -1000, duration: 1.5, ease: "expo.out" }
-    //     );
-    //     TweenLite.fromTo(
-    //       `.main-section__element.fp-completely:not(.active) .main-section__geometry-element--second`,
-    //       { x: 0 },
-    //       { x: -1000, duration: 1.5, ease: "expo.out" }
-    //     );
-    //     TweenLite.fromTo(
-    //       `.main-section__element.fp-completely:not(.active) .main-section__geometry-element--third`,
-    //       { x: 0 },
-    //       { x: -1000, duration: 1.5, ease: "expo.out" }
-    //     );
-    //     TweenLite.fromTo(
-    //       `.main-section__element.fp-completely:not(.active) .main-section__subheader`,
-    //       { x: 0 },
-    //       { x: -1000, duration: 1.5, ease: "expo.out" }
-    //     );
-    //     TweenLite.fromTo(
-    //       `.main-section__element.fp-completely:not(.active) .main-section__right-side-inner-number`,
-    //       { y: 0 },
-    //       { y: 500, duration: 1.5, ease: "expo.out" }
-    //     );
-    //     TweenLite.fromTo(
-    //       `.main-section__element.fp-completely:not(.active) .main-section__element-button.primary-button`,
-    //       { x: 0 },
-    //       { x: 500, duration: 1.5, ease: "expo.out" }
-    //     );
-    //     TweenLite.fromTo(
-    //       `.main-section__element.fp-completely:not(.active) .main-section__right-side-inner-background-img`,
-    //       { y: 0 },
-    //       { y: -2000, duration: 0.75, ease: "expo.out" }
-    //     );
-    //     TweenLite.fromTo(
-    //       `.main-section__element.fp-completely:not(.active) .main-section__right-side-inner-background-mask--color-5`,
-    //       { x: 1000 },
-    //       { x: 0, duration: 3, ease: "expo.out" }
-    //     );
-    //     TweenLite.fromTo(
-    //       `.main-section__element.fp-completely:not(.active) .main-section__right-side-inner-background-mask--color-11`,
-    //       { x: 1000 },
-    //       { x: 0, duration: 1.5, ease: "expo.out" }
-    //     );
-    //   }
-    // };
 
     const animateFunction = () => {
       if (
@@ -162,6 +153,11 @@ document.onreadystatechange = () => {
           { y: -2000 },
           { y: 0, duration: 0.5, delay: 0.4, ease: "expo.out" }
         );
+        TweenLite.fromTo(
+          `.main-section__element.active:not(.fp-completely) .main-section__right-side-inner-description`,
+          { opacity: 0 },
+          { duration: 0.5, delay: 1.5, opacity: 1 }
+        );
 
         TweenLite.fromTo(
           `.main-section__element.active:not(.fp-completely) .main-section__right-side-inner-background-mask--color-5`,
@@ -175,11 +171,13 @@ document.onreadystatechange = () => {
         );
       }
     };
+    setTimeout(() => {
+      textAnimationFunction();
+    }, 1400);
 
     window.addEventListener("wheel", () => {
       if (flag === true) {
         animateFunction();
-        // animateOutFunction();
         flag = !flag;
         setTimeout(() => {
           flag = true;
