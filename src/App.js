@@ -6,6 +6,7 @@ import Section from "./components/Section/Section";
 import "./styles/App.scss";
 import "./styles/Section.scss";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
+import { Switch } from "react-router-dom";
 
 class App extends Component {
   state = {};
@@ -42,10 +43,31 @@ class App extends Component {
         sectionClass: "resume",
         sectionLeftData: {
           id: 2,
-          header: "Curiculum vitae",
+          header: "Curiculum Vitae",
           subheader: "Check my CV and e-CV in 2 language version"
         },
         sectionRightData: { id: 2 }
+      },
+      {
+        sectionClass: "projects",
+        sectionLeftData: {
+          id: 3,
+          header: "Best Projects",
+          subheader: "Greatest and best projects in many technologies"
+        },
+        sectionRightData: { id: 3 }
+      },
+      {
+        sectionClass: "get-in-touch",
+        sectionLeftData: {
+          id: 4,
+          header: "Get In Touch",
+          email: "p.zwolak.93@gmail.com",
+          phone: "+48798630903",
+          linkedin: "https://www.linkedin.com/in/patryk-zwolak-5960a8164/",
+          facebook: "https://www.facebook.com/patryk.zwolak.58"
+        },
+        sectionRightData: { id: 4 }
       }
     ]
   };
@@ -66,6 +88,7 @@ class App extends Component {
     });
     return (
       <div className="App">
+        {/* <Switch></Switch> */}
         <ParallaxBackground />
         <Header />
         <div className="main-section">{displaySections}</div>

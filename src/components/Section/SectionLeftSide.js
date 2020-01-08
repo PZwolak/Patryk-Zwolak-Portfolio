@@ -16,7 +16,34 @@ const SectionLeftSide = ({ sideData }) => {
         <div className="main-section__geometry-element main-section__geometry-element--third"></div>
       </div>
       <div className="main-section__subheader">
-        <p className="subheader">{sideData.subheader}</p>
+        {sideData.subheader ? (
+          <p className="subheader fw-200">{sideData.subheader}</p>
+        ) : (
+          <>
+            <a className="fw-200" href={`mailto:${sideData.email}`}>
+              <span>{sideData.email}</span>
+            </a>
+            <a className="fw-200" href={`tel:${sideData.phone}`}>
+              <span>{sideData.phone}</span>
+            </a>
+            <a
+              className="socials socials--linkedin"
+              href={sideData.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div></div>
+            </a>
+            <a
+              className="socials socials--facebook "
+              href={sideData.facebook}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div></div>
+            </a>
+          </>
+        )}
       </div>
     </div>
   );
