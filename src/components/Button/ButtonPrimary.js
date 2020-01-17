@@ -1,30 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { withRouter } from "react-router";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
-const ButtonPrimary = () => {
+const ButtonPrimary = ({ handleRightSide, sideData }) => {
   return (
     <div className="main-section__element-button primary-button">
       <span></span>
       <div className="mask">
         <div className="ring">
-          <Router>
-            <Link to="/example"></Link>
-            <Switch>
-              <Route path="/example" component={Example}>
-                <Example />
-              </Route>
-            </Switch>
-          </Router>
+          <Link to={sideData.url} onClick={handleRightSide}></Link>
         </div>
       </div>
     </div>
   );
 };
 
-class Example extends React.Component {
-  render() {
-    return <h2>Example333</h2>;
-  }
-}
-
-export default ButtonPrimary;
+export default withRouter(ButtonPrimary);

@@ -1,15 +1,18 @@
 import React, { Component } from "react";
+import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import fullpage from "fullpage.js";
 import ParallaxBackground from "./components/ParallaxBackground/ParallaxBackground";
 import Header from "./components/Header/Header";
 import Section from "./components/Section/Section";
+import AboutMe from "./components/Subpages/AboutMe/AboutMe";
 import "./styles/App.scss";
 import "./styles/Section.scss";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
-import { Switch } from "react-router-dom";
 
 class App extends Component {
-  state = {};
+  state = {
+    rightSideActive: false
+  };
 
   static defaultProps = {
     data: [
@@ -18,7 +21,8 @@ class App extends Component {
         sectionLeftData: {
           id: 0,
           header: "Patryk Zwolak",
-          subheader: "Front-end Developer"
+          subheader: "Front-end Developer",
+          url: "/about-me"
         },
         sectionRightData: {
           id: 0,
@@ -35,7 +39,8 @@ class App extends Component {
         sectionLeftData: {
           id: 1,
           header: "About me",
-          subheader: "Some words about me"
+          subheader: "Some words about me",
+          url: "/about-me"
         },
         sectionRightData: { id: 1 }
       },
@@ -75,23 +80,51 @@ class App extends Component {
   sectionsData = {};
 
   componentDidMount() {
-    new fullpage(".main-section", {
+    new fullpage(".main-section:not(.main-section-subpage)", {
       // anchors: ["firstPage", "secondPage", "thirdPage"],
       navigation: true
       // navigationTooltips: ["Top Tier", "Middle Tier", "Bottom Tier"],
       // sectionsColor: ["#f2f2f2", "#4BBFC3", "#7BAABE", "whitesmoke"]
     });
+    // fullpage.destroy("all");
   }
+
+  handleRightSide = () => {
+    setTimeout(() => {
+      window.location.reload(false);
+    }, 10);
+  };
+
   render() {
     const displaySections = this.props.data.map(el => {
-      return <Section key={el.sectionClass} sectionData={el} />;
+      return (
+        <Section
+          key={el.sectionClass}
+          sectionData={el}
+          handleRightSide={this.handleRightSide}
+        />
+      );
     });
     return (
       <div className="App">
-        {/* <Switch></Switch> */}
-        <ParallaxBackground />
-        <Header />
-        <div className="main-section">{displaySections}</div>
+        <Router>
+          <Switch>
+            <Route
+              path="/"
+              exact
+              component={() => (
+                <>
+                  <ParallaxBackground />
+                  <Header />
+                  <div className="main-section">{displaySections}</div>
+                </>
+              )}
+            ></Route>
+            <Route path="/about-me">
+              <AboutMe displaySections={displaySections} section={"about-me"} />
+            </Route>
+          </Switch>
+        </Router>
       </div>
     );
   }
