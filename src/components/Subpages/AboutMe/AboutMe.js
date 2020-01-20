@@ -1,6 +1,7 @@
 import React from "react";
 import "../../../styles/App.scss";
 import "../../../styles/Section.scss";
+import "../../../styles/AboutMe.scss";
 import "bootstrap/dist/css/bootstrap-grid.min.css";
 
 const AboutMe = ({ displaySections, section }) => {
@@ -11,30 +12,9 @@ const AboutMe = ({ displaySections, section }) => {
   });
   console.log(oneSectionn[0]);
   return (
-    <div>
+    <>
       <div className="main-section main-section-subpage">{oneSectionn}</div>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>v<h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-      <h1>Elo</h1>
-    </div>
+    </>
   );
 };
 

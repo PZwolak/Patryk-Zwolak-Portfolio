@@ -92,7 +92,7 @@ class App extends Component {
   handleRightSide = () => {
     setTimeout(() => {
       window.location.reload(false);
-    }, 10);
+    }, 1);
   };
 
   render() {

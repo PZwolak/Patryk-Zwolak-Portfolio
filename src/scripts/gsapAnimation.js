@@ -3,9 +3,7 @@ import { TweenLite, TimelineMax, Linear, Back, Sine } from "gsap";
 
 document.onreadystatechange = () => {
   if (document.readyState === "complete") {
-    let ms = document.querySelectorAll(
-      ".main-section:not(.main-section-subpage)"
-    );
+    let ms = document.querySelectorAll(".main-section");
     if (ms.length > 0) {
       let flag = true;
 
@@ -55,27 +53,27 @@ document.onreadystatechange = () => {
       };
 
       TweenLite.fromTo(
-        `.active .main-section__header`,
+        `.active .main-section__header, .main-section-subpage .main-section__header`,
         { x: -1000 },
         { x: 0, duration: 1, delay: 0.5, ease: "expo.out" }
       );
       TweenLite.fromTo(
-        `.active .main-section__geometry-element--first`,
+        `.active .main-section__geometry-element--first, .main-section-subpage .main-section__geometry-element--first`,
         { x: -1000 },
         { x: 0, duration: 1, delay: 0.6, ease: "expo.out" }
       );
       TweenLite.fromTo(
-        `.active .main-section__geometry-element--second`,
+        `.active .main-section__geometry-element--second, .main-section-subpage .main-section__geometry-element--second`,
         { x: -1000 },
         { x: 0, duration: 1, delay: 0.7, ease: "expo.out" }
       );
       TweenLite.fromTo(
-        `.active .main-section__geometry-element--third`,
+        `.active .main-section__geometry-element--third, .main-section-subpage .main-section__geometry-element--third`,
         { x: -1000 },
         { x: 0, duration: 1, delay: 0.8, ease: "expo.out" }
       );
       TweenLite.fromTo(
-        `.active .main-section__subheader`,
+        `.active .main-section__subheader, .main-section-subpage .main-section__subheader`,
         { x: -1000 },
         { x: 0, duration: 1, delay: 1, ease: "expo.out" }
       );
@@ -90,25 +88,35 @@ document.onreadystatechange = () => {
         { x: 0, duration: 1, delay: 1.4, ease: "expo.out" }
       );
       TweenLite.fromTo(
-        `.active .main-section__right-side-inner-background-img`,
+        `.main-section-subpage .main-section__element-button.primary-button`,
+        { x: -500 },
+        { x: 0, duration: 1, delay: 1.4, ease: "expo.out" }
+      );
+      TweenLite.fromTo(
+        `.active .main-section__right-side-inner-background-img, .main-section-subpage .main-section__right-side-inner-background-img`,
         { y: -2000 },
         { y: 0, duration: 0.5, delay: 0.4, ease: "expo.out" }
       );
       TweenLite.fromTo(
-        `.active .main-section__right-side-inner-description`,
+        `.active .main-section__right-side-inner-description, .main-section-subpage .main-section__right-side-inner-description`,
         { opacity: 0 },
         { duration: 0.5, delay: 1.5, opacity: 1 }
       );
 
       TweenLite.fromTo(
-        `.active .main-section__right-side-inner-background-mask--color-5`,
+        `.active .main-section__right-side-inner-background-mask--color-5, .main-section-subpage .main-section__right-side-inner-background-mask--color-5`,
         { x: 0 },
         { x: 1000, duration: 2, delay: 1, ease: "expo.out" }
       );
       TweenLite.fromTo(
-        `.active .main-section__right-side-inner-background-mask--color-11`,
+        `.active .main-section__right-side-inner-background-mask--color-11, .main-section-subpage .main-section__right-side-inner-background-mask--color-11`,
         { x: 0 },
         { x: 1000, duration: 1.2, delay: 1.2, ease: "expo.out" }
+      );
+      TweenLite.fromTo(
+        `.main-section-subpage .main-section__left-side`,
+        { opacity: 0 },
+        { opacity: 1, duration: 0, delay: 0, ease: "expo.out" }
       );
 
       const animateFunction = () => {

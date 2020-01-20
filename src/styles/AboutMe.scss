@@ -1,0 +1,232 @@
+@import "../styles/__variables.scss";
+
+.main-section {
+  &-subpage {
+    margin-left: 0;
+    .main-section {
+      &__element {
+        position: relative;
+        padding-left: 0;
+      }
+      &__about-me {
+        background-image: linear-gradient(to top, $color-5, $color-4);
+        height: 100vh;
+      }
+      &__left-side {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        > div {
+          width: 100%;
+        }
+        .main-section__header {
+        }
+        .main-section__geometry-elements {
+        }
+        .main-section__subheader {
+        }
+        // top: 50%;
+        // width: 50%;
+        // transform: translateY(-65%);
+        // z-index: 5;
+      }
+      &__right-side {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        &-inner {
+          &-number {
+            display: none;
+          }
+        }
+      }
+      &__element-button {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+      }
+    }
+  }
+
+  &__element {
+    > div {
+      //   position: relative;
+      //   display: flex;
+      //   align-items: center;
+    }
+  }
+  &__left-side {
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    transform: translateY(-65%);
+    z-index: 5;
+  }
+  &__header {
+    margin-bottom: 40px;
+  }
+  &__geometry-elements {
+    margin-bottom: 40px;
+  }
+  &__geometry-element {
+    position: relative;
+    width: 100px;
+    height: 5px;
+    margin: 10px 0;
+    background: $color-11;
+    border-radius: 10px;
+    &--first {
+      left: 10%;
+    }
+    &--second {
+      left: 40%;
+    }
+    &--third {
+      left: 20%;
+    }
+  }
+  &__subheader {
+    max-width: 415px;
+    text-align: right;
+  }
+  &__right-side {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  &__right-side-inner {
+    position: relative;
+    width: 65%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: 100px;
+  }
+  &__right-side-inner-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &__right-side-inner-background-mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    // opacity: 0.4;
+    // background-color: $color-11;
+    // z-index: 1;
+    // filter: brightness(0.5);
+    &--color-5 {
+      opacity: 1;
+      background-color: $color-5;
+      z-index: 3;
+      filter: none;
+    }
+    &--color-11 {
+      opacity: 1;
+      background-color: $color-11;
+      z-index: 2;
+      filter: none;
+    }
+  }
+  &__right-side-inner-background-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    &--0 {
+      background-image: url("../images/patryk-zwolak-compressed.jpg");
+      filter: brightness(0.85);
+    }
+    &--1 {
+      background-image: url("../images/sesja-9.JPG");
+    }
+  }
+  &__right-side-inner-number {
+    position: absolute;
+    bottom: 0px;
+    left: 170px;
+    z-index: 5;
+  }
+  &__element-button {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+  &__right-side-inner-description {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 60%;
+    transform: translate(0, -50%);
+  }
+  &__right-side-inner-description-element {
+    display: flex;
+    position: absolute;
+    &:nth-child(1) {
+      position: relative;
+      span {
+        display: none;
+      }
+    }
+    &--number-0 {
+      position: relative;
+      font-size: 2.25rem;
+    }
+    &--number-1 {
+      font-size: 1.75rem;
+    }
+    &--number-2 {
+      font-size: 1.75rem;
+    }
+    &--number-3 {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+#fp-nav {
+  position: absolute;
+  bottom: 0;
+  left: 37px;
+  z-index: 1;
+  > ul {
+    list-style: none;
+    > li {
+      line-height: 3px;
+      > a {
+        display: inline-block;
+        margin: 10px 0;
+        padding: 15px 0;
+        &.active {
+          > span {
+            &:nth-child(2) {
+              width: 50px;
+              transition: $cubic-1 0.3s;
+            }
+          }
+        }
+        > span {
+          &:nth-child(1) {
+            display: none;
+          }
+          &:nth-child(2) {
+            display: block;
+            width: 25px;
+            height: 4px;
+            background-color: $color-1;
+            border-radius: 10px;
+            transition: $cubic-1 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
