@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/patryk-zwolak-portfolio/static/css/main.ba3e699d.chunk.css",
-    "main.js": "/patryk-zwolak-portfolio/static/js/main.d3fee5f0.chunk.js",
-    "main.js.map": "/patryk-zwolak-portfolio/static/js/main.d3fee5f0.chunk.js.map",
+    "main.js": "/patryk-zwolak-portfolio/static/js/main.275913a7.chunk.js",
+    "main.js.map": "/patryk-zwolak-portfolio/static/js/main.275913a7.chunk.js.map",
     "runtime-main.js": "/patryk-zwolak-portfolio/static/js/runtime-main.fef8abca.js",
     "runtime-main.js.map": "/patryk-zwolak-portfolio/static/js/runtime-main.fef8abca.js.map",
     "static/css/2.2831ab12.chunk.css": "/patryk-zwolak-portfolio/static/css/2.2831ab12.chunk.css",
     "static/js/2.493c8e25.chunk.js": "/patryk-zwolak-portfolio/static/js/2.493c8e25.chunk.js",
     "static/js/2.493c8e25.chunk.js.map": "/patryk-zwolak-portfolio/static/js/2.493c8e25.chunk.js.map",
     "index.html": "/patryk-zwolak-portfolio/index.html",
-    "precache-manifest.048fd8285fefc6ff30044f7af24db363.js": "/patryk-zwolak-portfolio/precache-manifest.048fd8285fefc6ff30044f7af24db363.js",
+    "precache-manifest.33483a867cb48b4a71a097713b9a6b2b.js": "/patryk-zwolak-portfolio/precache-manifest.33483a867cb48b4a71a097713b9a6b2b.js",
     "service-worker.js": "/patryk-zwolak-portfolio/service-worker.js",
     "static/css/2.2831ab12.chunk.css.map": "/patryk-zwolak-portfolio/static/css/2.2831ab12.chunk.css.map",
     "static/css/main.ba3e699d.chunk.css.map": "/patryk-zwolak-portfolio/static/css/main.ba3e699d.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.2831ab12.chunk.css",
     "static/js/2.493c8e25.chunk.js",
     "static/css/main.ba3e699d.chunk.css",
-    "static/js/main.d3fee5f0.chunk.js"
+    "static/js/main.275913a7.chunk.js"
   ]
 }
