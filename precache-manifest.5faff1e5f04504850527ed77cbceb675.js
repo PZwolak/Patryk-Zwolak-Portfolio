@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "194302ca8492c11adab49fef457e2ca5",
+    "revision": "b99d6a5b9773a42ff6367f0f7cb7aa0c",
     "url": "/patryk-zwolak-portfolio/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/patryk-zwolak-portfolio/static/css/2.2831ab12.chunk.css"
   },
   {
-    "revision": "392fc1565d8aa92f52e9",
+    "revision": "d993513c21e852156f5a",
     "url": "/patryk-zwolak-portfolio/static/css/main.2e28028c.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/patryk-zwolak-portfolio/static/js/2.493c8e25.chunk.js.LICENSE"
   },
   {
-    "revision": "392fc1565d8aa92f52e9",
-    "url": "/patryk-zwolak-portfolio/static/js/main.e6e7a31e.chunk.js"
+    "revision": "d993513c21e852156f5a",
+    "url": "/patryk-zwolak-portfolio/static/js/main.9c347ed3.chunk.js"
   },
   {
     "revision": "9129f05d18b574ff6623",
