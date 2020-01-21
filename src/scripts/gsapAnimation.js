@@ -1,10 +1,10 @@
 import SplitTextJS from "split-text-js";
-import { TweenLite, TimelineMax, Linear, Back, Sine } from "gsap";
+import { TweenLite, TimelineMax } from "gsap";
 
 document.onreadystatechange = () => {
   if (document.readyState === "complete") {
-    let ms = document.querySelectorAll(".main-section");
-    if (ms.length > 0) {
+    let ms = document.querySelector(".main-section");
+    if (ms) {
       let flag = true;
 
       const textAnimationFunction = () => {
@@ -184,7 +184,11 @@ document.onreadystatechange = () => {
         }
       };
       setTimeout(() => {
-        // textAnimationFunction();
+        if (
+          document.querySelector(".main-section:not(.main-section-subpage)")
+        ) {
+          textAnimationFunction();
+        }
       }, 1400);
 
       window.addEventListener("wheel", () => {

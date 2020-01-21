@@ -21,8 +21,8 @@ class App extends Component {
         sectionLeftData: {
           id: 0,
           header: "Patryk Zwolak",
-          subheader: "Front-end Developer",
-          url: "/about-me"
+          subheader: "Front-end Developer"
+          // url: ""
         },
         sectionRightData: {
           id: 0,
